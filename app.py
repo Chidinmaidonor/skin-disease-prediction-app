@@ -16,7 +16,7 @@ class_names = ['Acne and Rosacea', 'Actinic Keratosis','Atopic Dermatitis','Bull
                'Tinea Ringworm','Urticaria Hives','Vascular Tumors','Vasculitis','Warts Molluscum']
 
 # Streamlit UI
-st.title("🩺 Chidinma Pet Class Prediction App")
+st.title("🩺 Chidinma Skin Disease Prediction App")
 
 uploaded_file = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png"])
 
