@@ -6,11 +6,14 @@ import numpy as np
 from PIL import Image
 
 # Load model
-model = load_model("model/pet_model.h5")
+model = load_model("model/disease_prediction.h5")
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 # Class labels
-class_names = ['cat', 'dog']
+class_names = ['Acne and Rosacea', 'Actinic Keratosis','Atopic Dermatitis','Bullous Disease',
+               'Cellulitis Impetigo','Eczema','Exanthems','Herpes HPV','Light disease','Lupus',
+               'Melanoma Skin Cancer','Poison Ivy','Psoriasis','Seborrheic','Systemic Disease',
+               'Tinea Ringworm','Urticaria Hives','Vascular Tumors','Vasculitis','Warts Molluscum']
 
 # Streamlit UI
 st.title("🩺 Chidinma Pet Class Prediction App")
